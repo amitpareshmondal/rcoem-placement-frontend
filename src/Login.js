@@ -18,7 +18,7 @@ const Login = () => {
     setValue(localStorage.getItem("email"));
   })
   return (
-    <div style={{textAlign:"center"}}>
+    <div style={{textAlign:"center",marginTop:"10vh"}}>
    
   <img src={image} style={{display:"block",marginLeft:"auto",marginRight:"auto",scale:'0.8' }}/>
       {value!==null&&value.includes("@rknec.edu")?window.location.href="jobs":

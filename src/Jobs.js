@@ -31,12 +31,12 @@ const Jobs=()=>{
         {
             data.map((item,index)=>{
                 return(
-                    <Company Image={item.Image} Name={item.Name} Date={item.LastDate} Link={item.Link} Details={item.Details}/>
+                    <Company key={item._id} Image={item.Image} Name={item.Name} Date={item.LastDate} Link={item.Link} Details={item.Details}/>
                 )
             })
         }
      
-    </div>:<div style={{textAlign:"center"}}><img src={loading} style={{display:"block", marginLeft:"auto",marginRight:"auto"}}/><br/><b >Occasional loading delays may occur due to our utilization of a free server</b></div>
+    </div>:<div style={{textAlign:"center"}}><img alt="loading" src={loading} style={{display:"block", marginLeft:"auto",marginRight:"auto"}}/><br/><b >Occasional loading delays may occur due to our utilization of a free server</b></div>
     }
     {/* <div class="flex flex-wrap -mx-1 lg:-mx-4">
         {

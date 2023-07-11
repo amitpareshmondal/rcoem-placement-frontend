@@ -25,16 +25,16 @@ const TaskList=()=>{
         textAlign:"center",
         marginTop:"10px"
      }}>Announcements</h1>
-         <div class="container my-12 mx-auto px-4 md:px-12">
+         <div className="container my-12 mx-auto px-4 md:px-12">
 
         
 
 {
-    !Loading?<div class="flex flex-wrap -mx-1 lg:-mx-4">
+    !Loading?<div className="flex flex-wrap -mx-1 lg:-mx-4">
     {
         data.map((item,index)=>{
             return(
-                <Tasks Title={item.Title} Details={item.Details} Link={item.Link} LastDate={item.LastDate}/>
+                <Tasks key={item._id} Title={item.Title} Details={item.Details} Link={item.Link} LastDate={item.LastDate}/>
             )
         })
     }

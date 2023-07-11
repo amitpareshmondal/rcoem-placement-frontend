@@ -8,12 +8,12 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey:process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGE_ID,
-  appId: process.env.REACT_APP_ID
+  apiKey:"AIzaSyB0kGDWSICsk29LpgM3S2DgZ_CVU9TUfsc",
+  authDomain: "placmements.firebaseapp.com",
+  projectId: "placmements",
+  storageBucket: "placmements.appspot.com",
+  messagingSenderId:"326716354122",
+  appId: "1:326716354122:web:ef846eff9500718b1bc0b3"
 };
 console.log(process.env.REACT_APP_API_KEY)
 const provider = new GoogleAuthProvider();

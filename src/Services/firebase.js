@@ -1,0 +1,32 @@
+import { initializeApp } from 'firebase/app';
+import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+
+// Import the functions you need from the SDKs you need
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey:process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGE_ID,
+  appId: process.env.REACT_APP_ID
+};
+console.log(process.env.REACT_APP_API_KEY)
+const provider = new GoogleAuthProvider();
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth();
+
+provider.setCustomParameters({ prompt: 'select_account' });
+
+// export const signInWithGoogle = () => {signInWithPopup(auth,provider).then((res)=>{
+//     console.log(res);
+// })
+
+// };
+export {auth,provider};

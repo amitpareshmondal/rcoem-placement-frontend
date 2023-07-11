@@ -25,9 +25,9 @@ const Jobs=()=>{
         textAlign:"center",
         marginTop:"10px"
      }}><u>On Campus</u></h1>
-     <div class="container my-12 mx-auto px-4 md:px-12">
+     <div className="container my-12 mx-auto px-4 md:px-12">
     {
-        !Loading?<div class="flex flex-wrap -mx-1 lg:-mx-4">
+        !Loading?<div className="flex flex-wrap -mx-1 lg:-mx-4">
         {
             data.map((item,index)=>{
                 return(
